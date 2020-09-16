@@ -1,9 +1,19 @@
+.reviews-section {
+  background-image: linear-gradient($white-bg-color, $light-bg-color);
+
+  @media screen and (max-width: 767px) {
+    max-width: 320px;
+  }
+}
+
 .reviews-section .reviews-container {
   padding-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 30px;
   text-align: center;
+
+  background-color: $white-bg-color;
 }
 
 .rewiews-list-img {
@@ -25,6 +35,12 @@
 .rewiews-list-social {
   margin-top: 20px;
   margin-bottom: 20px;
+
+  transition: all 250ms linear;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
 .rewiews-list-name {
@@ -57,32 +73,52 @@
 .rewiews-read-next {
   font-size: 12px;
   line-height: 1.666;
+  text-decoration: underline;
 
   color: $accent-color;
 }
 
 .rewiews-input-photo {
   position: relative;
+  padding-top: 20px;
+
   display: flex;
   justify-content: center;
 
   & img {
     width: 54px;
     height: 54px;
+    border-radius: 50%;
   }
 
-  & img:not(:last-child) {
+  & img:not(:nth-child(3)) {
     margin-right: 10px;
   }
 }
 
 .rewiews-button-container {
+  position: absolute;
   display: flex;
   justify-content: space-between;
+  top: 50%;
 }
 
 .prev-button,
 .next-button {
-  width: 25px;
-  height: 16px;
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-items: center;
+  box-sizing: content-box;
+  padding: 0;
+  border: 0;
+  background-color: $light-bg-color;
+}
+
+.prev-button {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
 }
