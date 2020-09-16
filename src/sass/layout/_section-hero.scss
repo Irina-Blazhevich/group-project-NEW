@@ -5,7 +5,7 @@ line-height: 130%;
 margin-bottom: 30px;
 letter-spacing: 0.03em;
 
-color: $logo-color;
+color: $title-text-color;
 }
 .space-between{
 margin-top: 35px;
@@ -17,7 +17,7 @@ font-size: 20px;
 line-height: 164.9%;
 
 letter-spacing: 0.08em;
-color: $nav-color;
+color: $primary-text-color;
 }
 .quarantee{
 font-weight: bold;
@@ -27,7 +27,7 @@ line-height: 164.9%;
 
 letter-spacing: 0.08em;
 
-color: $logo-color;
+color: $title-text-color;
 }
 .promise{
 font-style: normal;
@@ -37,7 +37,7 @@ line-height: 164.9%;
 letter-spacing: 0.08em;
 
 transform: translateX(-5%);
-color:$logo-color;
+color: $title-text-color;
 }
 .promise-uptudate{
 font-style: normal;
@@ -48,7 +48,7 @@ line-height: 164.9%;
 letter-spacing: 0.08em;
 
 transform: translateX(-13%);
-color:$logo-color; 
+color:$title-text-color; 
 }
 .methods{
 display: flex;

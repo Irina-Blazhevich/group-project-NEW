@@ -27,7 +27,7 @@ p{
 }
 
 body{
-color: #B9B9B9;
+color: $primary-text-color;
 font-family: 'Montserrat', sans-serif;
 letter-spacing: 0.03em;
 margin: 0;
@@ -41,56 +41,56 @@ margin-right: auto;
 outline: 1px solid teal;
 }
 // ИХ ВАРИАНТ
-.container {
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
+// .container {
+//     width: 100%;
+//     padding-left: 20px;
+//     padding-right: 20px;
+//     margin: 0 auto;
 
-    @include for-size(tablet-portrait) {      
-    width: 320px;
-    padding-left: 20px;
-    padding-right: 20px;
-    }
+//     @include for-size(tablet-portrait) {      
+//     width: 320px;
+//     padding-left: 20px;
+//     padding-right: 20px;
+//     }
 
-    @include for-size(tablet-landscape) {      
-      width: 768px;
-      padding-left: 40px;
-      padding-right: 40px;
+//     @include for-size(tablet-landscape) {      
+//       width: 768px;
+//       padding-left: 40px;
+//       padding-right: 40px;
 
-    }
+//     }
     
-    @include for-size(desktop) {      
-      width: 1344px;
-      padding-left: 15px;
-      padding-right: 15px;
-    }
+//     @include for-size(desktop) {      
+//       width: 1344px;
+//       padding-left: 15px;
+//       padding-right: 15px;
+//     }
 
-}
+// }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+// img {
+//     display: block;
+//     max-width: 100%;
+//     height: auto;
+// }
 
-.list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+// .list {
+//     list-style: none;
+//     padding: 0;
+//     margin: 0;
+// }
   
-.link {
-    text-decoration: none;
-    color: inherit;
-}
+// .link {
+//     text-decoration: none;
+//     color: inherit;
+// }
 
-.section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+// .section {
+//     padding-top: 50px;
+//     padding-bottom: 50px;
 
-}
+// }
 
-.section-title {
-    color: $title-text-color;    
-}
+// .section-title {
+//     color: $title-text-color;    
+// }

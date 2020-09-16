@@ -1,5 +1,5 @@
 .logo{
-color: $logo-color;
+color:$title-text-color;
 font-weight: 800;
 font-size: 26px;
 line-height: 1.2;
@@ -10,14 +10,14 @@ letter-spacing: 0.04em;
     list-style: none;
 }
 .text-style{
-    font-weight: bold;
+font-weight: bold;
 font-size: 8px;
 line-height: 10px;
 /* identical to box height */
 
 letter-spacing: 0.18em;
 text-transform: uppercase;
-color: $logo-color;
+color: $title-text-color;
 }
 .hell-style{
 color: $accent-color;    
@@ -48,7 +48,7 @@ font-weight: bold;
 font-size: 14px;
 line-height: 1.2;
 
-color: $nav-color;
+color: $primary-text-color;
 text-transform: uppercase;
 }
 .guide:first-child{
