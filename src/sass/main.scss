@@ -1,5 +1,13 @@
-@import "./utils/variables";
-@import "./utils/mixins";
-@import "./base/normalize";
-@import "./base/common";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
 
+// Стили для файла с примером HTML-фрагмента
+@import "./base/normalize";
+@import "./utils/variables";
+@import "./utils/mixin";
+@import "./base/common";
+@import "./layout/body";
+@import "./components/dash";
+@import "./layout/methods-sectoin";
