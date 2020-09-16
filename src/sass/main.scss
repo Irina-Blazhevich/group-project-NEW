@@ -2,13 +2,13 @@
 @import "./utils/mixins";
 @import "./base/normalize";
 @import "./base/common";
-@import './components/button';
-@import './layout/page-headr';
 @import './components/logo';
-@import './layout/section-hero';
+@import './components/button';
+@import "./components/dash";
+@import './layout/page-headr';
 @import './components/menu';
-
-
-
-
+@import './layout/section-hero';
+@import "./layout/body";
+@import "./layout/methods-sectoin";
+@import './layout/our-program';
 
