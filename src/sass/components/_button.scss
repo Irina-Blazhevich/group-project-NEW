@@ -1,0 +1,35 @@
+.button-main{
+width: 336px;
+height: 70px;
+// margin-top: 30px;
+margin-left: 60px;
+border: 2px solid $accent-color;
+
+font-weight: bold;
+font-size: 14px;
+line-height: 1.2;
+
+letter-spacing: 0.14em;
+text-transform: uppercase;
+
+color: $accent-color;
+
+
+background: $white-color;
+cursor: pointer;
+}
+.desire-for-lesson{
+width: 353px;
+height: 69px;
+
+font-weight: bold;
+font-size: 14px;
+line-height: 1.2;
+
+background: $accent-color;
+color: $white-color;
+letter-spacing: 0.14em;
+text-transform: uppercase;
+border: transparent;
+cursor: pointer;
+}

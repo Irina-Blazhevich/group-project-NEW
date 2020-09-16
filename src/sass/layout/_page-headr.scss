@@ -1,0 +1,67 @@
+.logo{
+color: $logo-color;
+font-weight: 800;
+font-size: 26px;
+line-height: 1.2;
+
+letter-spacing: 0.04em;
+}
+.list{
+    list-style: none;
+}
+.text-style{
+    font-weight: bold;
+font-size: 8px;
+line-height: 10px;
+/* identical to box height */
+
+letter-spacing: 0.18em;
+text-transform: uppercase;
+color: $logo-color;
+}
+.hell-style{
+color: $accent-color;    
+}
+.flex{
+display: flex;
+}
+.flex-for-nav{
+display: flex;
+}
+.flex-for-nav{
+align-items: center;
+}
+.navigation{
+display: flex;
+}
+.center-position{
+display: flex;
+flex-direction: column;
+/* align-items: center; */
+justify-content: center;
+}
+.quide-link{
+text-decoration: none;
+
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 1.2;
+
+color: $nav-color;
+text-transform: uppercase;
+}
+.guide:first-child{
+    margin-left: 140px;
+}
+.guide:nth-last-child(-n + 3){
+    margin-left: 40px;
+}
+.about-us{
+    color: $accent-color;
+}
+.quide-link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
