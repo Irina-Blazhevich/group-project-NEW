@@ -1,12 +1,4 @@
-html {
-    box-sizing: border-box;
-}
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
 h1,
 h2,
 h3,
@@ -16,81 +8,61 @@ h6{
   margin: 0;
   padding: 0;
 }
-ul,
-li{
-  margin: 0;
-  padding: 0;
-}
+
 p{
   margin: 0;
   padding: 0;
 }
 
-body{
-color: $primary-text-color;
-font-family: 'Montserrat', sans-serif;
-letter-spacing: 0.03em;
-margin: 0;
-}
-.container{
-width: 1344px;
-padding-left: 15px;
-padding-right: 15px;
-margin-left: auto;
-margin-right: auto;   
-outline: 1px solid teal;
-}
-// Другой вариант 
-// .container {
-//     width: 100%;
-//     padding-left: 20px;
-//     padding-right: 20px;
-//     margin: 0 auto;
 
-//     @include for-size(tablet-portrait) {      
-//     width: 320px;
-//     padding-left: 20px;
-//     padding-right: 20px;
-//     }
+ .container {
+    width: 100%;
+     padding-left: 20px;
+    padding-right: 20px;
+     margin: 0 auto;
 
-//     @include for-size(tablet-landscape) {      
-//       width: 768px;
-//       padding-left: 40px;
-//       padding-right: 40px;
+     @include for-size(tablet-portrait) {      
+    width: 320px;
+     padding-left: 20px;
+     padding-right: 20px;
+     }
 
-//     }
+    @include for-size(tablet-landscape) {      
+       width: 768px;
+      padding-left: 40px;
+       padding-right: 40px;
+    }
     
-//     @include for-size(desktop) {      
-//       width: 1344px;
-//       padding-left: 15px;
-//       padding-right: 15px;
-//     }
+     @include for-size(desktop) {      
+      width: 1344px;
+      padding-left: 15px;
+       padding-right: 15px;
+    }
 
-// }
+ }
 
-// img {
-//     display: block;
-//     max-width: 100%;
-//     height: auto;
-// }
-
-// .list {
-//     list-style: none;
-//     padding: 0;
-//     margin: 0;
-// }
+ img {
+     display: block;
+    max-width: 100%;
+     height: auto;
+ }
+ .list {
+     list-style: none;
+    padding: 0;
+     margin: 0;
+ }
   
-// .link {
-//     text-decoration: none;
-//     color: inherit;
-// }
+ .link {
+     text-decoration: none;
+    color: inherit;
+ }
 
-// .section {
-//     padding-top: 50px;
-//     padding-bottom: 50px;
+ .section {
+    padding-top: 50px;
+     padding-bottom: 50px;
 
-// }
+ }
 
-// .section-title {
-//     color: $title-text-color;    
-// }
+ .section-title {
+ color: $title-text-color;    
+ }
