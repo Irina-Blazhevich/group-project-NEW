@@ -58,9 +58,28 @@ img {
 .section {
   padding-top: 50px;
   padding-bottom: 50px;
-
  }
- .section-title {
- color: $title-text-color;    
+
+.section-title {
+    color: $title-text-color;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.36;
+    letter-spacing: 0.03em;
+
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    @include for-size(ttablet-landscape){
+      font-size: 26px;
+      line-height: 1.30;
+    }
+    @include for-size(desktop){
+      font-size: 46px;
+      margin-top: 0;
+      margin-bottom: 50px;
+    }
+}
  
 
