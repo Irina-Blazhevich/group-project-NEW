@@ -3,8 +3,11 @@
 }
 
 .programs {
+  position: relative;
+
   height: 2050px;
   padding-bottom: 0;
+  outline: 2px solid red;
 }
 
 .title-programs {
@@ -90,7 +93,7 @@
     content: '';
 
     display: block;
-    width: 20px;
+    width: 12px;
     height: 2px;
     background-color: #ff6b09;
     margin-top: 7px;
@@ -117,4 +120,17 @@
   &.card {
     margin-top: 10px;
   }
+}
+
+.program-img {
+  position: absolute;
+  width: 120px;
+  height: 137px;
+  // left: 200px;
+  right: 0;
+  top: 1385px;
+
+  // background: url(Слой-613.jpg);
+  opacity: 0.5;
+  outline: 2px solid red;
 }
