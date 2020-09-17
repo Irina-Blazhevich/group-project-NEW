@@ -1,0 +1,77 @@
+.inscription-style{
+font-weight: 800;
+font-size: 58px;
+line-height: 130%;
+margin-bottom: 30px;
+letter-spacing: 0.03em;
+
+color: $title-text-color;
+}
+.space-between{
+margin-top: 35px;
+margin-bottom: 45px;
+}
+.warnt{
+font-weight: 500;
+font-size: 20px;
+line-height: 164.9%;
+
+letter-spacing: 0.08em;
+color: $primary-text-color;
+}
+.quarantee{
+font-weight: bold;
+font-size: 20px;
+margin-bottom: 40px;
+line-height: 164.9%;
+
+letter-spacing: 0.08em;
+
+color: $title-text-color;
+}
+.promise{
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 164.9%;
+letter-spacing: 0.08em;
+
+transform: translateX(-5%);
+color: $title-text-color;
+}
+.promise-uptudate{
+font-style: normal;
+font-weight: bold;
+width: 250px;
+font-size: 20px;
+line-height: 164.9%;
+letter-spacing: 0.08em;
+
+transform: translateX(-13%);
+color:$title-text-color; 
+}
+.methods{
+display: flex;
+}
+.methods-item{
+display: flex;
+align-items: center;
+}
+.container-hero{
+width: 1344px;
+display: flex;
+padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;   
+
+}
+.container-methods{
+width: 1344px;
+margin-top: 100px;
+padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;   
+
+}
