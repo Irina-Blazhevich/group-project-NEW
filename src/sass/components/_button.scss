@@ -14,13 +14,30 @@ text-transform: uppercase;
 
 color: $accent-color;
 
-
 background: $white-bg-color;
 cursor: pointer;
+display: none; 
+
+@include for-size(tablet-portrait) { 
+    display: none;     
+    width: 320px;
 }
+
+     @include for-size(tablet-landscape) {     
+     display: block;
+     min-width: 260px;
+     
+   }
+   
+      @include for-size(desktop) {      
+      width: 336px;
+   }
+}
+
+
 .desire-for-lesson{
-width: 353px;
-height: 69px;
+width: 100%;
+height: 48px;
 
 font-weight: bold;
 font-size: 14px;
@@ -28,8 +45,13 @@ line-height: 1.2;
 
 background: $accent-color;
 color: $white-bg-color;
-letter-spacing: 0.14em;
 text-transform: uppercase;
 border: transparent;
 cursor: pointer;
+
+@include for-size(desktop) {      
+    width: 353px;
+    height: 69px;
+    letter-spacing: 0.14em;
+ }
 }

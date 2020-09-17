@@ -24,6 +24,20 @@ color: $accent-color;
 }
 .flex{
 display: flex;
+
+     @include for-size(tablet-landscape) {      
+     width: 768px;
+     padding-left: 40px;
+     padding-right: 40px;
+
+     display: flex;
+   }
+   
+      @include for-size(desktop) {      
+      width: 1344px;
+      padding-left: 15px;
+      padding-right: 15px;
+   }
 }
 .flex-for-nav{
 display: flex;
@@ -32,7 +46,26 @@ display: flex;
 align-items: center;
 }
 .navigation{
-display: flex;
+    display: none;
+
+@include for-size(tablet-portrait) {      
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    display: none;
+    }
+
+     @include for-size(tablet-landscape) {      
+     width: 768px;
+     padding-left: 40px;
+     padding-right: 40px;
+   }
+   
+      @include for-size(desktop) {      
+      padding: 0;
+      display: flex;
+   }
 }
 .center-position{
 display: flex;
@@ -52,7 +85,7 @@ color: $primary-text-color;
 text-transform: uppercase;
 }
 .guide:first-child{
-    margin-left: 140px;
+    margin-left: 70px;
 }
 .guide:nth-last-child(-n + 3){
     margin-left: 40px;
