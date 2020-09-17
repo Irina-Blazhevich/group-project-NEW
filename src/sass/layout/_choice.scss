@@ -1,0 +1,126 @@
+.choice-section {
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    $black-bg-color 68%,
+    $white-bg-color 32%
+  );
+
+  @media screen and (min-width: 768px) {
+    background: linear-gradient(
+      to bottom,
+      $black-bg-color 45%,
+      $black-bg-color 30%,
+      $white-bg-color 25%
+    );
+  }
+}
+
+.choice-section-title {
+  width: 50%;
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: 0.03em;
+  color: $title-secondary-color;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    font-size: 26px;
+    line-height: 1.31;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+  }
+}
+
+.choice-list {
+  min-width: 280px;
+  margin: 0;
+  padding: 20px 14px 20px 30px;
+  background: $white-bg-color;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 50px 25px 70px;
+
+    @media screen and (min-width: 1344px) {
+      padding: 70px 55px;
+      align-items: baseline;
+    }
+  }
+}
+
+.choice-item-link {
+  display: inline-flex;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.08em;
+  color: $accent-color;
+
+  @media screen and (min-width: 768px) {
+    line-height: 1.64;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 1.65;
+  }
+}
+
+.choice-item-link::before {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 1px;
+  margin-top: 8px;
+  margin-right: 9px;
+  background-color: $accent-color;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 11px;
+  }
+
+  @media screen and (min-width: 1344px) {
+    margin-top: 15px;
+  }
+}
+
+.choice-item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 50px) / 2);
+    margin: 25px;
+
+    @media screen and (min-width: 1344px) {
+      width: calc((100% - 3 * 70px) / 3);
+      margin: 35px;
+    }
+  }
+}
+
+.choice-link-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.08em;
+  color: $title-text-color;
+
+  @media screen and (min-width: 1344px) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
