@@ -12,7 +12,9 @@ p{
   margin: 0;
   padding: 0;
 }
-
+*{
+outline: 1px solid teal;
+}
 .container {
     width: 100%;
     padding-left: 20px;

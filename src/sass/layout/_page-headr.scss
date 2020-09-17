@@ -22,6 +22,7 @@ color: $title-text-color;
 color: $accent-color;    
 }
 .flex{
+position: relative;
 display: flex;
 
      @include for-size(tablet-landscape) {      
