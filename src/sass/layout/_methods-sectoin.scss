@@ -75,7 +75,7 @@
         @include for-size(desktop){
             width: calc((100% - 10px * 6) / 3);
             height: 396px;
-            padding: 30px 40px;
+            padding: 30px 30px;
             margin: 10px;
         }
     }
@@ -120,43 +120,14 @@
         line-height: 1.40;
 
     }
-    &.dash::after{
-        content: "";
-        position: absolute;
-        display: block;
-        width: 20px;
-        height: 2px;
-        background-color: $accent-color;
+    &::after{
+        
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
     }
-    // &::after{
-    //     content: "";
-    //     position: absolute;
-    //     display: block;
-    //     width: 20px;
-    //     height: 2px;
-    //     background-color: $accent-color;
-    //     bottom: 0;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-       
-       
-        
-    // }
+   
 }
-// .dash::after{
-//     content: "";
-//     position: absolute;
-//     display: block;
-//     width: 20px;
-//     height: 2px;
-//     background-color: $accent-color;
-//     bottom: 0;
-//     left: 50%;
-//     transform: translateX(-50%);
-// }
 .icon-methods{
     fill:$accent-color;
    
@@ -174,4 +145,5 @@
     line-height: 1.56;
 
     }
+    
 }

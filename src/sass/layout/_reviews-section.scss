@@ -1,0 +1,124 @@
+.reviews-section {
+  background-image: linear-gradient($white-bg-color, $light-bg-color);
+
+  @media screen and (max-width: 767px) {
+    max-width: 320px;
+  }
+}
+
+.reviews-section .reviews-container {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+
+  background-color: $white-bg-color;
+}
+
+.rewiews-list-img {
+  display: flex;
+  justify-content: center;
+  height: 90px;
+}
+
+.reviews-section-title {
+  margin: 0;
+  text-align: center;
+
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+}
+
+.rewiews-list-social {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  transition: all 250ms linear;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.rewiews-list-name {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.214;
+  letter-spacing: 0.08em;
+
+  color: $accent-color;
+}
+
+.rewiews-list-release p {
+  margin: 0;
+  margin-top: 10px;
+
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+}
+
+.rewiews-list-rewiews p {
+  margin: 0;
+  margin-top: 10px;
+
+  font-size: 12px;
+  line-height: 1.666;
+
+  color: $secondary-text-color;
+}
+
+.rewiews-read-next {
+  font-size: 12px;
+  line-height: 1.666;
+  text-decoration: underline;
+
+  color: $accent-color;
+}
+
+.rewiews-input-photo {
+  position: relative;
+  padding-top: 20px;
+
+  display: flex;
+  justify-content: center;
+
+  & img {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+  }
+
+  & img:not(:nth-child(3)) {
+    margin-right: 10px;
+  }
+}
+
+.rewiews-button-container {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-items: center;
+  box-sizing: content-box;
+  padding: 0;
+  border: 0;
+  background-color: $light-bg-color;
+}
+
+.prev-button {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
+}
