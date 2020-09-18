@@ -1,22 +1,29 @@
-.dark-background {
-  background: $black-bg-color;
-  max-width: 1680px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .programs {
   position: relative;
-
-  height: 2050px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(
+    to bottom,
+    $black-bg-color 89.5%,
+    $white-bg-color 10.5%
+  );
   padding-bottom: 0;
 
   @include for-size(tablet-landscape) {
-    height: 1355px;
+    background: linear-gradient(
+      to bottom,
+      $black-bg-color 83%,
+      $white-bg-color 17%
+    );
   }
 
   @include for-size(desktop) {
-    height: 1237px;
+    background: linear-gradient(
+      to bottom,
+      $black-bg-color 86%,
+      $white-bg-color 22%
+    );
+    max-width: 1680px;
   }
 }
 
@@ -40,7 +47,6 @@
 
   @include for-size(desktop) {
     margin-bottom: 92px;
-
     font-size: 46px;
   }
 }
@@ -210,8 +216,10 @@
 }
 
 .text-card {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
   margin-top: 5px;
-  margin-bottom: 8px;
 
   font-style: normal;
   font-weight: 500;
@@ -251,15 +259,15 @@
 .program-img {
   position: absolute;
   right: 0;
-  top: 1385px;
+  top: 1332px;
   opacity: 0.5;
 
   @include for-size(tablet-landscape) {
-    top: 810px;
+    top: 780px;
   }
 
   @include for-size(desktop) {
-    top: 610px;
+    top: 746px;
     left: 0;
   }
 }

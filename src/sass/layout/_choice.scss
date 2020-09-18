@@ -1,24 +1,13 @@
 .choice-section {
-  width: 100%;
-  background: linear-gradient(
-    to bottom,
-    $black-bg-color 68%,
-    $white-bg-color 32%
-  );
+  position: relative;
+  margin-top: 50px;
 
   @media screen and (min-width: 768px) {
-    background: linear-gradient(
-      to bottom,
-      $black-bg-color 45%,
-      $black-bg-color 30%,
-      $white-bg-color 25%
-    );
+    margin-top: 195px;
 
     @media screen and (min-width: 1344px) {
-      max-width: 1680px;
-      margin-left: auto;
-      margin-right: auto;
-      background: none;
+      margin-top: 195px;
+      z-index: 99;
     }
   }
 }
@@ -112,7 +101,7 @@
     margin: 15px 20px;
 
     @media screen and (min-width: 1344px) {
-      width: calc((100% - 6 * 25px) / 3);
+      width: calc((100% - 6 * 22px) / 3);
     }
   }
 }
