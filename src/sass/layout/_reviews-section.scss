@@ -1,5 +1,5 @@
 .reviews-section {
-  background-image: linear-gradient($white-bg-color, $light-bg-color);
+  background-image: linear-gradient($white-bg-color 15%, $light-bg-color);
 
   @media screen and (max-width: 767px) {
     max-width: 320px;
