@@ -17,12 +17,27 @@
             background-image: url(../images/footer/footer-mob@2x-min.png);
         }
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        height: 520px;
+        background-image: url(../images/footer/footer-tab-min.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(../images/footer/footer-tab@2x-min.png);
+        }
+    }
 }
 
 .form-title {
     font-size: 14px;
     color: $title-secondary-color;
     text-align: center;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        font-size: 26px;  
+    }
 
     &-accent {
         color: $accent-color;
@@ -38,6 +53,10 @@
     line-height: 1.36;
     letter-spacing: 0.03em;
     text-align: center;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        font-size: 14px;  
+    }
 
     &-accent {
         color: $accent-color;
@@ -59,6 +78,13 @@
     font-size: 14px;
     letter-spacing: 0.08em;
     color: $title-secondary-color;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        max-width: 390px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
 
     &:not(:last-child) {
         margin-bottom: 20px;
