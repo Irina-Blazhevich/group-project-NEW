@@ -25,11 +25,13 @@ display: none;
      @include for-size(tablet-landscape) {     
      display: block;
      min-width: 260px;
+     margin-left: 200px;
      
    }
    
       @include for-size(desktop) {      
       width: 336px;
+      margin-left: 60px;
    }
 }
 
