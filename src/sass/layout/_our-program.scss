@@ -41,9 +41,17 @@
     left: 0;
     height: 1215px;
     border-left: 1px solid $white-bg-color;
+
+    @include for-size(tablet-landscape) {
+      height: 720px;
+    }
   }
 
   @include for-size(tablet-landscape) {
+    padding-left: 50px;
+  }
+
+  @include for-size(desktop) {
     display: flex;
   }
 }
@@ -51,6 +59,11 @@
 .item-program {
   padding: 0;
   list-style: none;
+
+  @include for-size(tablet-landscape) {
+    display: flex;
+    // outline: 2px solid red;
+  }
 }
 
 .circle {
@@ -58,6 +71,10 @@
 
   &:not(:last-child) {
     margin-bottom: 40px;
+
+    @include for-size(tablet-landscape) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -86,6 +103,10 @@
 
     background-color: $accent-color;
     transform: translateX(-100%);
+
+    @include for-size(tablet-landscape) {
+      left: -44px;
+    }
   }
 }
 
@@ -131,6 +152,13 @@
 
   &.card {
     margin-top: 10px;
+  }
+}
+
+.item-card {
+  @include for-size(tablet-landscape) {
+    margin-right: 20px;
+    width: 176px;
   }
 }
 
