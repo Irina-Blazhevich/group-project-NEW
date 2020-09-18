@@ -98,3 +98,28 @@ text-transform: uppercase;
     padding-top: 32px;
     padding-bottom: 32px;
 }
+.wave{
+    height: 100%;
+    background-image: url(..//images/wave.png);
+    background-position: center top 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+
+    @include for-size(tablet-portrait) {
+        background-image: url(..//images/wave.png);
+        background-position: center top 500%;
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+      }
+    
+      @include for-size(tablet-landscape) {
+        background-image: url(..//images/wave.png);
+        background-position: center top 500%;
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+      }
+}

@@ -98,7 +98,7 @@ color: $title-text-color;
         letter-spacing: 0.08em;
         margin-left: 10px;
         width: 336px;
-        transform: translateX(-7%);
+        transform: translateX(-5%);
         letter-spacing: 1px;
     }
 }
@@ -221,7 +221,7 @@ margin-right: auto;
     width: 370px;
 
     @include for-size(desktop) {      
-    width: 700px;
+    min-width: 700px;
      }
 }
 svg.teacher-border{
@@ -231,5 +231,6 @@ svg.teacher-border{
       }
       @include for-size(desktop) {      
         height: 102px;
+        width: 100px;
      }
 }
