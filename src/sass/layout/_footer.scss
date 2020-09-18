@@ -18,7 +18,7 @@
         }
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1343px) {
         height: 520px;
         background-image: url(../images/footer/footer-tab-min.png);
 
@@ -28,6 +28,19 @@
             background-image: url(../images/footer/footer-tab@2x-min.png);
         }
     }
+
+    @media screen and (min-width: 1344px) {
+        padding-top: 100px;
+        padding-bottom: 62px;
+        height: 840px;
+        background-image: url(../images/footer/footer-desk-min.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(../images/footer/footer-desk@2x-min.png);
+        }
+    }
 }
 
 .form-title {
@@ -35,8 +48,12 @@
     color: $title-secondary-color;
     text-align: center;
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1343px) {
         font-size: 26px;  
+    }
+
+    @media screen and (min-width: 1344px) {
+        font-size: 46px; 
     }
 
     &-accent {
@@ -54,8 +71,13 @@
     letter-spacing: 0.03em;
     text-align: center;
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1343px) {
         font-size: 14px;  
+    }
+
+    @media screen and (min-width: 1344px) {
+        margin-bottom: 50px;
+        font-size: 30px; 
     }
 
     &-accent {
@@ -79,8 +101,16 @@
     letter-spacing: 0.08em;
     color: $title-secondary-color;
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1343px) {
         max-width: 390px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @media screen and (min-width: 1344px) {
+        max-width: 478px;
+        height: 70px;
         display: block;
         margin-right: auto;
         margin-left: auto;
@@ -88,6 +118,10 @@
 
     &:not(:last-child) {
         margin-bottom: 20px;
+
+        @media screen and (min-width: 1344px) {
+            margin-bottom: 30px;
+        }
     }
 
     &::placeholder {
@@ -96,6 +130,10 @@
         font-size: 14px;
         letter-spacing: 0.08em;
         color: $title-secondary-color;
+
+        @media screen and (min-width: 1344px) {
+            font-size: 20px;  
+        }
     }
 }
 
@@ -121,31 +159,80 @@
     text-transform: uppercase;
 
     cursor: pointer;
+
+    @media screen and (min-width: 1344px) {
+        width: 354px;
+        height: 70px;
+        margin-top: 80px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
 }
 
 .footer-contacts {
-    width: 100%;
+    
     padding-bottom: 30px;
     padding-top: 30px;
+    
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1343px) {
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+
+    @media screen and (min-width: 1344px) {
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+}
+
+.flexbox {
+    @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
     text-align: center;
+    }
 
 }
 
-.logo-link {
-    display: inline-block;
-    text-align: center;
-    margin-bottom: 21px;
+.logo-footer {
+ margin-bottom: 0px;
+
+ @media screen and (min-width: 768px) and (max-width: 1343px) {
+    margin-right: 209px;
+ }
+
+ @media screen and (min-width: 1344px) {
+    margin-right: 290px;
+ }
+ 
 }
 
 .logo-text {
-    display: block;
-    font-size: 10px;
-    color:$title-text-color;
+    margin-bottom: 21px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0px;
+    }
+}
+
+.footer-contacts-list {
+    @media screen and (min-width: 768px) {
+       display: flex;
+    }
+
 }
 
 .phone-link {
     display: inline-flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 31px;
 
     font-style: normal;
@@ -154,6 +241,25 @@
     line-height: 17px;
     letter-spacing: 0.08em;
     color: $title-text-color;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0px;
+        font-size: 20px;
+
+        &::after {
+            display: block;
+            margin-right: 24px;
+            margin-left: 24px;
+            content: '';
+            width: 1px;
+            height: 40px;
+            background-color:$primary-text-color;
+        }
+    }
+
+    @media screen and (min-width: 1344px){
+        font-size: 30px; 
+    }
     
 }
 
@@ -173,4 +279,15 @@
     padding-bottom: 21px;
     background: $black-bg-color;
     text-align: center;
+
+    @media screen and (min-width: 768px) and (max-width: 1343px) {
+        padding-left: 40px;
+        text-align: left;
+    }
+
+    @media screen and (min-width: 1344px) {
+        padding-left: 15px;
+        text-align: left;
+
+    }
 }
