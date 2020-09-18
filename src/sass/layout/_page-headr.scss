@@ -1,8 +1,9 @@
 .logo{
 color:$title-text-color;
 font-weight: 800;
-font-size: 26px;
+font-size: 24px;
 line-height: 1.2;
+margin-bottom: 3px;
 
 letter-spacing: 0.04em;
 }
@@ -12,7 +13,7 @@ letter-spacing: 0.04em;
 .text-style{
 font-weight: bold;
 font-size: 8px;
-line-height: 10px;
+line-height: 10px; 
 
 letter-spacing: 0.18em;
 text-transform: uppercase;
@@ -22,6 +23,7 @@ color: $title-text-color;
 color: $accent-color;    
 }
 .flex{
+position: relative;
 display: flex;
 
      @include for-size(tablet-landscape) {      
