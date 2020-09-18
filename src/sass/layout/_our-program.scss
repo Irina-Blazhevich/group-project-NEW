@@ -70,19 +70,20 @@
     display: block;
     position: absolute;
     top: 10px;
-    left: 0;
+    left: -1px;
     height: 1215px;
     border-left: 1px solid $white-bg-color;
 
     @include for-size(tablet-landscape) {
       height: 710px;
+      left: -1px;
     }
     @include for-size(desktop) {
       height: 0;
-      width: 1400px;
+      width: 1680px;
       border-top: 1px solid $white-bg-color;
       border-left: 0;
-      transform: translateX(-8%);
+      transform: translateX(-11%);
     }
   }
 
@@ -167,16 +168,21 @@
   }
 
   @include for-size(desktop) {
-    top: -47px;
+    width: 17.14px;
+    height: 16px;
+
+    top: -49px;
     left: 0;
     transform: translateX(0%);
   }
 }
 
 .title-card {
-  display: flex;
+  position: relative;
+  display: inline-flex;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 19px;
 
   font-weight: bold;
   font-size: 12px;
@@ -187,6 +193,7 @@
 
   @include for-size(desktop) {
     margin-bottom: 10px;
+    margin-left: 27px;
 
     font-size: 20px;
     line-height: 1.65;
@@ -195,17 +202,18 @@
 
 .title-card::before {
   content: '';
-
-  display: block;
+  position: absolute;
+  // margin-right: 10px;
+  left: -17px;
   width: 12px;
   height: 2px;
   background-color: #ff6b09;
-  margin-top: 7px;
-  margin-right: 10px;
-  transform: translateY(50%);
+  top: 9px;
 
   @include for-size(desktop) {
     width: 20px;
+    left: -29px;
+    top: 15px;
   }
 }
 
