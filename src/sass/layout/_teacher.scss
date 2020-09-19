@@ -1,12 +1,8 @@
 .teacher {
   padding-bottom: 50px;
 
-  & p {
-    margin: 0px;
-  }
-
   @media screen and (min-width: 1344px) {
-    padding-top: 329px;
+    padding-top: 130px;
     padding-bottom: 98px;
   }
 }
@@ -14,6 +10,12 @@
 @media screen and (min-width: 768px) {
   .teacher-tab {
     display: flex;
+  }
+
+  @media screen and (min-width: 320px) {
+    .teacher-tab {
+      padding-top: 10px;
+    }
   }
 
   .teacher-about {
