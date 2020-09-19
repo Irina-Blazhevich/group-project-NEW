@@ -10,6 +10,7 @@ line-height: 1.2;
 
 letter-spacing: 0.14em;
 text-transform: uppercase;
+text-decoration: none;
 
 color: $accent-color;
 
@@ -60,6 +61,7 @@ background: $accent-color;
 color: $white-bg-color;
 text-transform: uppercase;
 border: transparent;
+text-decoration: none;
 cursor: pointer;
 
 @include for-size(desktop) {      
