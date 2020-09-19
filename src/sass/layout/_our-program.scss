@@ -15,6 +15,7 @@
       $black-bg-color 83%,
       $white-bg-color 17%
     );
+    padding-top: 60px;
   }
 
   @include for-size(desktop) {
@@ -24,6 +25,7 @@
       $white-bg-color 22%
     );
     max-width: 1680px;
+    padding-top: 120px;
   }
 }
 
@@ -155,6 +157,14 @@
   }
 }
 
+.change {
+  margin-bottom: 0;
+
+  @include for-size(desktop) {
+    margin-bottom: 25px;
+  }
+}
+
 .link-program::before {
   content: '';
   display: inline-flex;
@@ -218,16 +228,14 @@
 
   @include for-size(desktop) {
     width: 20px;
-    left: -29px;
+    left: -27px;
     top: 15px;
   }
 }
 
 .text-card {
-  &:not(:last-child) {
-    margin-bottom: 8px;
-  }
   margin-top: 5px;
+  margin-bottom: 8px;
 
   font-style: normal;
   font-weight: 500;
@@ -249,9 +257,14 @@
   }
 
   &.card {
-    margin-top: 10px;
+    margin-top: 25px;
+    margin-bottom: 0;
   }
 }
+
+// .text-card:not(:last-child) {
+//   margin-bottom: 8px;
+// }
 
 .item-card {
   @include for-size(tablet-landscape) {
