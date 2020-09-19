@@ -1,3 +1,8 @@
+@media screen and (min-width: 1344px) {
+  .guaranties-section {
+    padding-bottom: 80px;
+  }
+}
 .guaranties-section-title {
   text-align: center;
   margin-top: 0;
@@ -123,4 +128,24 @@
 .guaranties-item-star,
 .guaranties.accent-element {
   color: $accent-color;
+}
+.guaranties-item .guaranties-item-star::after {
+  display: block;
+  content: 'При условии посещения 90% занятий и выполнения 100% заданий';
+  width: 250px;
+  position: absolute;
+  bottom: 14px;
+  right: 0;
+  font-family: 'MontserratM', sans-serif;
+  font-size: 12px;
+  padding: 10px;
+  color: $accent-color;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.5s linear;
+}
+.guaranties-item .guaranties-item-star:hover::after {
+  opacity: 1;
+  overflow: visible;
 }
