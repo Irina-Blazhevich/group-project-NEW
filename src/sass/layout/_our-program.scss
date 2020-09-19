@@ -15,6 +15,7 @@
       $black-bg-color 83%,
       $white-bg-color 17%
     );
+    padding-top: 60px;
   }
 
   @include for-size(desktop) {
@@ -24,6 +25,7 @@
       $white-bg-color 22%
     );
     max-width: 1680px;
+    padding-top: 120px;
   }
 }
 
@@ -61,6 +63,7 @@
 
   @include for-size(desktop) {
     margin: 0;
+    outline: 1px solid green;
   }
 }
 
@@ -79,7 +82,7 @@
     left: -1px;
     height: 1215px;
     border-left: 1px solid $white-bg-color;
-
+    outline: 1px solid green;
     @include for-size(tablet-landscape) {
       height: 710px;
       left: -1px;
@@ -119,7 +122,7 @@
 
 .circle {
   position: relative;
-
+  outline: 1px solid green;
   &:not(:last-child) {
     margin-bottom: 40px;
 
@@ -218,7 +221,7 @@
 
   @include for-size(desktop) {
     width: 20px;
-    left: -29px;
+    left: -27px;
     top: 15px;
   }
 }
