@@ -101,6 +101,15 @@
     letter-spacing: 0.08em;
     color: $title-secondary-color;
 
+    &:focus {
+        border: 1px solid $accent-color ;
+        outline: none;
+      }
+
+    &:not(:placeholder-shown):invalid {
+        border-color: red;
+    }
+   
     @media screen and (min-width: 768px) and (max-width: 1343px) {
         max-width: 390px;
         display: block;
