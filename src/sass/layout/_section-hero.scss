@@ -23,14 +23,14 @@ color: $title-text-color;
         letter-spacing: 0.03em;
         color: #111518;
         padding: 10;
-        padding-right: 80px;
         width: 320px;
+        font-size: 26px;
         
         color: $title-text-color;
    }
    
       @include for-size(desktop) {      
-      width: 700px;
+      width: 100%;
       font-size: 58px;
    }
 }
@@ -40,22 +40,37 @@ margin-bottom: 45px;
 }
 .warnt{
 font-weight: 500;
-font-size: 20px;
 line-height: 164.9%;
 
 letter-spacing: 0.08em;
 color: $primary-text-color;
+
+@media screen and (max-width: 1343px){
+   font-size: 14px; 
+}
+
+@media screen and (min-width: 1344px){
+   font-size: 20px; 
+}
 }
 .quarantee{
 font-weight: bold;
-font-size: 20px;
 margin-bottom: 40px;
 line-height: 164.9%;
 
 letter-spacing: 0.08em;
 
 color: $title-text-color;
+@media screen and (max-width: 1343px){
+   font-size: 14px; 
 }
+
+@media screen and (min-width: 1344px){
+   font-size: 20px; 
+}
+}
+
+
 .promise{
 font-style: normal;
 font-weight: bold;
@@ -113,7 +128,8 @@ letter-spacing: 0.08em;
 transform: translateX(-13%);
 color:$title-text-color; 
 }
- .method{
+
+.method{
 
  @include for-size(tablet-portrait) {      
     display: flex;
@@ -126,17 +142,18 @@ color:$title-text-color;
      padding-right: 40px;
    }
    
-      @include for-size(desktop) {      
-      width: 1344px;
-      padding-left: 15px;
-      padding-right: 15px;
-   }
+   //    @include for-size(desktop) {      
+   //    width: 1344px;
+   //    padding-left: 15px;
+   //    padding-right: 15px;
+   // }
  }
 .methods-item{
 display: flex;
 align-items: center;
 
 margin-bottom: 30px;
+
 }
 .container-hero{
 padding-left: 15px;
