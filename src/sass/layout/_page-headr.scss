@@ -130,27 +130,32 @@ text-transform: uppercase;
 
 
 .wave{
-    height: 100%;
+    // height: 100%;
     background-image: url(..//images/wave.png);
-    background-position: center top 100%;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-y: -300px;
+    position: relative;
 
     box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
 
     @include for-size(tablet-portrait) {
         background-image: url(..//images/wave.png);
-        background-position: center top 500%;
+        width: 100%;
         background-repeat: no-repeat;
-        /* background-size: cover; */
-        box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+        background-size: cover;
+        background-position-y: -300px;
+        position: relative;
       }
     
       @include for-size(tablet-landscape) {
         background-image: url(..//images/wave.png);
-        background-position: center top 500%;
+        width: 100%;
         background-repeat: no-repeat;
-        /* background-size: cover; */
+        background-size: cover;
+        background-position-y: -300px;
+        position: relative;
         box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
       }
 }
