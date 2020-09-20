@@ -43,7 +43,7 @@ display: none;
 
 
 .desire-for-lesson{
-width: 100%;
+width: 260px;
 height: 48px;
 
 display: flex;
@@ -54,7 +54,7 @@ height: 48px;
 margin-bottom: 30px;
 
 font-weight: bold;
-font-size: 14px;
+font-size: 12px;
 line-height: 1.2;
 
 background: $accent-color;
@@ -64,31 +64,39 @@ border: transparent;
 text-decoration: none;
 cursor: pointer;
 
-@include for-size(desktop) {      
-   width: 336px;
-   height: 69px;
+@media screen and (max-width: 320px) {
+   margin-right: auto;
+   margin-left: auto;
+}
+
+@include for-size(tablet-landscape) {      
+   width: 260px;
    display: flex;
    align-items: center;
-   padding-left: 15px;
-    letter-spacing: 0.14em; 
+   margin: 0px;
+   height: 48px;
+   font-size: 12px;
+}
+
+@include for-size(desktop) {      
+   width: 354px;
+   height: 70px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   letter-spacing: 0.14em; 
+   font-size: 14px;
     
  }
 
- @include for-size(tablet-landscape) {      
-      width: 336px;
-      display: flex;
-      align-items: center;
-      padding-left: 20px;
-      margin: 0px;
-      height: 69px;
- }
  
-    @include for-size(desktop) {      
-    width: 336px;
-    display: flex;
-    align-items: center;
-    padding-left: 0;
-    height: 69px;
+ 
+//     @include for-size(desktop) {      
+//     width: 354px;
+//     display: flex;
+//     align-items: center;
+//     padding-left: 0;
+//     height: 70px;
     
- }
+//  }
 }
