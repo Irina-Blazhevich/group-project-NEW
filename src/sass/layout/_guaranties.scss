@@ -147,14 +147,17 @@
 
   @include for-size(tablet-landscape){
     transform: scale(1.2);
-   
-    left: 100px;
+    padding: 15px;
+    left: 38px;
+    bottom:-10px;
   }
   
 
   @include for-size(desktop){
     transform: scale(1.8);
+    padding: 15px;
     left: 120px;
+    bottom: 15px;
   }
 }
 .guaranties-item .guaranties-item-star:hover::after {
