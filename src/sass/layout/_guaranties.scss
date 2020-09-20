@@ -131,8 +131,7 @@
   position: absolute;
   bottom: 14px;
   right: 0;
-  font-family: 'MontserratM', sans-serif;
-  font-size: 12px;
+
   padding: 10px;
   color: $accent-color;
   background-color: rgba(0, 0, 0, 0.7);
@@ -142,19 +141,20 @@
   pointer-events: none;
 
   @include for-size(tablet-landscape){
-    transform: scale(1.2);
+    transform: scale(1);
 
-    padding: 15px;
-    left: 38px;
+    
+    left: 28px;
     bottom:-10px;
   }
 
 
   @include for-size(desktop){
-    transform: scale(1.8);
-    padding: 15px;
-    left: 120px;
-    bottom: 15px;
+    transform: scale(1.2);
+    
+    left: 85px;
+    bottom: 0;
+    width: 350px;
   }
   }
 
