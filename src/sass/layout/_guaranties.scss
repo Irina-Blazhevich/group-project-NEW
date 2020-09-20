@@ -1,8 +1,3 @@
-@media screen and (min-width: 1344px) {
-  .guaranties-section {
-    padding-bottom: 80px;
-  }
-}
 .guaranties-section-title {
   text-align: center;
   margin-top: 0;
@@ -144,7 +139,24 @@
   opacity: 0;
   overflow: hidden;
   transition: all 0.5s linear;
-}
+
+  @include for-size(tablet-landscape){
+    transform: scale(1.2);
+
+    padding: 15px;
+    left: 38px;
+    bottom:-10px;
+  }
+
+
+  @include for-size(desktop){
+    transform: scale(1.8);
+    padding: 15px;
+    left: 120px;
+    bottom: 15px;
+  }
+  }
+
 .guaranties-item .guaranties-item-star:hover::after {
   opacity: 1;
   overflow: visible;

@@ -176,6 +176,7 @@
   cursor: pointer;
 
   color: $accent-color;
+  transition: all 250ms linear;
 
   &:hover {
     background-color: $accent-color;
