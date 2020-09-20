@@ -280,7 +280,7 @@
 .program-img {
   position: absolute;
   right: 0;
-  top: 1332px;
+  top: 1400px;
   opacity: 0.5;
 
   @include for-size(tablet-landscape) {
@@ -288,7 +288,7 @@
   }
 
   @include for-size(desktop) {
-    top: 746px;
+    top: 800px;
     left: 0;
   }
 }
