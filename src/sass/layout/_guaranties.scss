@@ -144,6 +144,18 @@
   opacity: 0;
   overflow: hidden;
   transition: all 0.5s linear;
+
+  @include for-size(tablet-landscape){
+    transform: scale(1.2);
+   
+    left: 100px;
+  }
+  
+
+  @include for-size(desktop){
+    transform: scale(1.8);
+    left: 120px;
+  }
 }
 .guaranties-item .guaranties-item-star:hover::after {
   opacity: 1;
