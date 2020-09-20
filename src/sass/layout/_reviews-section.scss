@@ -76,6 +76,33 @@
   text-decoration: underline;
 
   color: $accent-color;
+<<<<<<< Updated upstream
+=======
+
+  transition: all 250ms linear;
+
+  &:hover {
+    background-color: $accent-color;
+    color: $white-bg-color;
+  }
+
+  @media screen and (min-width: 1344px) {
+    font-size: 18px;
+    line-height: 1.555;
+  }
+
+  span:nth-child(2) {
+    display: none;
+  }
+
+  &.is-open span:nth-child(2) {
+    display: block;
+  }
+
+  &.is-open span:nth-child(1) {
+    display: none;
+  }
+>>>>>>> Stashed changes
 }
 
 .rewiews-input-photo {
