@@ -126,7 +126,7 @@
 }
 .guaranties-item .guaranties-item-star::after {
   display: block;
-  content: 'При условии посещения 90% занятий и выполнения 100% заданий';
+  content: attr(data-tooltip);
   width: 250px;
   position: absolute;
   bottom: 14px;
@@ -139,6 +139,7 @@
   opacity: 0;
   overflow: hidden;
   transition: all 0.5s linear;
+  pointer-events: none;
 
   @include for-size(tablet-landscape){
     transform: scale(1.2);
@@ -158,6 +159,7 @@
   }
 
 .guaranties-item .guaranties-item-star:hover::after {
+  content: attr(data-tooltip);
   opacity: 1;
   overflow: visible;
 }
