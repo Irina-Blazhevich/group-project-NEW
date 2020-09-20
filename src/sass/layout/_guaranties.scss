@@ -139,25 +139,27 @@
   opacity: 0;
   overflow: hidden;
   transition: all 0.5s linear;
+  pointer-events: none;
 
-  @include for-size(tablet-landscape){
-    transform: scale(1.2);
+  @include for-size(tablet-landscape) {
+    transform: scale(1);
 
     padding: 15px;
     left: 38px;
-    bottom:-10px;
+    bottom: -10px;
   }
 
-
-  @include for-size(desktop){
-    transform: scale(1.8);
+  @include for-size(desktop) {
+    transform: scale(1.2);
     padding: 15px;
-    left: 120px;
-    bottom: 15px;
+    left: 85px;
+    bottom: 0;
+    width: 350px;
   }
-  }
+}
 
 .guaranties-item .guaranties-item-star:hover::after {
+  content: attr(data-tooltip);
   opacity: 1;
   overflow: visible;
 }
