@@ -130,32 +130,38 @@ text-transform: uppercase;
 
 
 .wave{
-    // height: 100%;
     background-image: url(..//images/wave.png);
-    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -300px;
+    background-position-y: -200px;
     position: relative;
 
     box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
 
     @include for-size(tablet-portrait) {
         background-image: url(..//images/wave.png);
-        width: 100%;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position-y: -300px;
+        background-position-y: -200px;
         position: relative;
       }
     
       @include for-size(tablet-landscape) {
-        background-image: url(..//images/wave.png);
-        width: 100%;
+        background-image: url(..//images/wave-tablet.png);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position-y: -300px;
+        background-position-y: -100px;
+        position: relative;
+        background-size: auto 100%;
+      }
+      @include for-size(desktop) {
+        background-image: url(..//images/wave.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -150px;
         position: relative;
         box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+        background-size: auto 100%;
+        background-position-x: 10px;   
       }
 }
