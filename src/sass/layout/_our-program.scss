@@ -29,6 +29,22 @@
   }
 }
 
+.programs::before {
+  @include for-size(desktop) {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 269px;
+
+    margin: 0;
+    padding: 0;
+    height: 0;
+    width: 100vw;
+    width: 100%;
+    border-top: 1px solid $white-bg-color;
+  }
+}
+
 .title-programs {
   margin-top: 0;
   margin-bottom: 43px;
@@ -88,10 +104,6 @@
     }
     @include for-size(desktop) {
       height: 0;
-      width: 1680px;
-      border-top: 1px solid $white-bg-color;
-      border-left: 0;
-      transform: translateX(-11%);
     }
   }
 
@@ -187,7 +199,7 @@
     width: 17.14px;
     height: 16px;
 
-    top: -49px;
+    top: -62px;
     left: 0;
     transform: translateX(0%);
   }
@@ -219,7 +231,6 @@
 .title-card::before {
   content: '';
   position: absolute;
-  // margin-right: 10px;
   left: -17px;
   width: 12px;
   height: 2px;
@@ -261,10 +272,6 @@
     margin-bottom: 0;
   }
 }
-
-// .text-card:not(:last-child) {
-//   margin-bottom: 8px;
-// }
 
 .item-card {
   @include for-size(tablet-landscape) {
