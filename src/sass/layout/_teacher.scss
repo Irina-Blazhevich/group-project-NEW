@@ -1,6 +1,3 @@
-// .teacher {
-//   padding-bottom: 50px;
-
 @media screen and (min-width: 1344px) {
   .teacher {
     padding-top: 130px;
@@ -23,12 +20,12 @@
 }
 
 @media screen and (min-width: 768px) {
-  .teacher-tab {
+  .teacher-img {
     display: flex;
   }
 
   @media screen and (min-width: 320px) {
-    .teacher-tab {
+    .teacher-img {
       padding-top: 10px;
     }
   }
@@ -48,13 +45,14 @@
 
 .teacher-title,
 .teacher-name {
-  margin-top: 0px;
-  margin-bottom: 20px;
+  color: $title-text-color;
   font-weight: 800;
   font-size: 20px;
   line-height: 1.3;
+  margin-top: 0px;
+  margin-bottom: 20px;
   letter-spacing: 0.03em;
-  color: $title-text-color;
+  
 
   @media screen and (min-width: 768px) {
     font-size: 26px;
@@ -95,9 +93,27 @@
   }
 }
 
+.teacher-item::before {
+    content: "";
+    display: block;
+    height: 17px;
+    width: 14px;
+    background-image: url(../images/svg/check.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+  @media screen and (min-width: 1344px) {
+    width: 24.41px;
+    height: 20px;
+  }
+}
+
 .teacher-item {
-  position: relative;
   padding-left: 27px;
+  position: relative;
 
   & + .teacher-item {
     margin-top: 21px;
@@ -109,23 +125,6 @@
 
   @media screen and (min-width: 1344px) {
     padding-left: 59px;
-  }
-}
-
-.teacher-item::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 17px;
-  height: 14px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../images/svg/check.svg);
-
-  @media screen and (min-width: 1344px) {
-    width: 24.41px;
-    height: 20px;
   }
 }
 
@@ -144,7 +143,7 @@
   }
 }
 
-.education {
+.teacher-education {
   position: relative;
   font-weight: 500;
   font-size: 12px;
@@ -186,7 +185,7 @@
   }
 }
 
-.univer {
+.certificate {
   display: block;
   margin-top: 10px;
   font-weight: 500;
