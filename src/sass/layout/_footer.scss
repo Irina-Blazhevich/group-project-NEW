@@ -272,6 +272,14 @@
     
 }
 
+.phone-icon {
+    @media screen and (min-width: 1344px){
+        width: 30px; 
+        height: 29px;
+        margin-right: 15px;
+    }
+}
+
 .inst-link {
     display: inline-flex;
     justify-content: center;
