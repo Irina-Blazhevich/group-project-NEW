@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/script.js"],"names":["$","document","ready","slick"],"mappings":"AAAAA,CAAC,CAACC,QAAD,CAAD,CAAYC,KAAZ,CAAkB,YAAY;AAC5BF,EAAAA,CAAC,CAAC,SAAD,CAAD,CAAaG,KAAb;AACD,CAFD","file":"script.d573be0b.js","sourceRoot":"..\\src","sourcesContent":["$(document).ready(function () {\r\n  $('.slider').slick();\r\n});\r\n"]}
